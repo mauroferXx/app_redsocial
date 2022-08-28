@@ -1,5 +1,5 @@
 {
-  "name": "app_redsocial",
+  "name": "app",
   "integrations": {
     "capacitor": {}
   },
