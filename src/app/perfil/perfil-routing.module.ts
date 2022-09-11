@@ -7,6 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: PerfilPage
+  },
+  
+  {
+    path: 'configuraciones',
+    loadChildren: () => import('../configuraciones/configuraciones.module').then(m => m.ConfiguracionesPageModule)
   }
 ];
 
