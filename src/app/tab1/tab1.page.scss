@@ -1,0 +1,122 @@
+.header-targeta{
+    background-color: blue;
+}
+
+.foto-scroll{
+    position :relative;
+    margin :auto;
+}
+
+
+.story-list{
+    padding: 16px 0 8px;
+    border-bottom: 1px solid #ddd;
+
+    .scroll-horizontal{
+        padding-left: 16px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-oveflow-scrolling: touch;
+        
+        .scroll-item{
+            position:relative;
+            display: inline-block;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            text-align: center;
+
+        }
+
+        .item-label {
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        ion-avatar {
+            &.has-update{
+                padding: 2px;
+                border: 2px solid var(--ion-color-danger);
+
+            }
+        }
+    }
+    
+
+}
+
+.story-list-v{
+    display: flex;
+  
+    
+
+    .scroll-vertical{
+        
+        
+        
+        -webkit-oveflow-scrolling: touch;
+        
+        .scroll-item-v{
+            
+        display: flex;
+        flex-wrap: wrap;
+            
+            
+           
+           
+           
+
+        }
+
+
+        .avatar-md-v{
+           margin: 3px 3px 3px 3px;
+            
+        }
+
+        .item-nombre-insta-v{
+            margin-top: 6%;
+            margin-left: 2%;
+            text-align: center;
+        }
+
+        .megusta{
+           
+        
+        }
+
+        .comentario{
+            
+
+        }
+
+        .enviar{
+
+            margin-right: 75%;
+        }
+        .guardar{
+        
+           
+        }
+
+        .comentarios{
+            margin-right: 50%;
+        }
+
+        .item-label-v {
+            margin-right: 60%;
+            font-size: 13px;
+            
+        }
+
+        ion-avatar {
+            &.has-update{
+                padding: 2px;
+                border: 2px solid var(--ion-color-danger);
+
+            }
+        }
+    }
+    
+
+}
