@@ -1,34 +1,119 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inicio
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+  <ion-header>
   </ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Instagram</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="send-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
+<ion-content>
+  <div class="story-list">
+    <div class="scroll-horizontal">
+      <div class="scroll-item">
+        <ion-avatar class="avatar-md">
+          <img src="https://placeimg.com/640/480/any">
+        </ion-avatar>
+        <div class="item-label text-muted">
+          mi story
+        </div>
+      </div>
+      <div class="scroll-item" *ngFor="let i of [1,3,5,7,9,11,13,15,17,19,21,23,25,28,30,33,35,37,39]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <img src="https://placeimg.com/640/480/{{i}}">
+          </ion-avatar>
+        </div>
+        <div class="item-label">
+          id insta
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <div class="story-list-v">
+    <div class="scroll-vertical">
+      <div class="scroll-item-v">
+        <ion-avatar class="avatar-md-v">
+          <img src="https://placeimg.com/640/480/any">
+        </ion-avatar>
+        <div class="item-nombre-insta-v">
+          nombre Instagram
+        </div>
+        <ion-photo class="avatar-md-v">
+          <img src="https://placeimg.com/640/480/any">
+        </ion-photo>
+        <div class="megusta">
+          <ion-icon name="heart-outline"></ion-icon>
+        </div>
+        <div class="comentario">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+        </div>
+        <div class="enviar">
+          <ion-icon name="send-outline"></ion-icon>
+        </div>
+        <div class="guardar">
+          <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="item-label-v">
+          me gusta
+        </div>
+        <div class="comentarios"> ver comentarios...</div>
+        <br>
+        <div class="tiempo_publicacion">hace 1 hora</div> 
+        <br>
+        <br>
+        <br>
+        
+      </div>
+
+
+      <div class="scroll-item-v" *ngFor="let i of [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]">
+        <div class="scroll-item-v">
+          <ion-avatar class="avatar-md-v has-update has-status">
+            <img src="https://placeimg.com/640/480/{{i}}">
+          </ion-avatar>
+          <div class="item-nombre-insta-v">
+            nombre Instagram
+          </div>
+          <ion-photo class="avatar-md has-update has-status">
+            <img src="https://placeimg.com/640/480/{{i}}">
+          </ion-photo>
+          <div class="megusta">
+            <ion-icon name="heart-outline"></ion-icon>
+          </div>
+          <div class="comentario">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </div>
+          <div class="enviar">
+            <ion-icon name="send-outline"></ion-icon>
+          </div>
+          <div class="guardar">
+            <ion-icon name="bookmark-outline"></ion-icon>
+          </div>
+          <div class="item-label-v">
+            me gusta
+          </div>
+          <div class="comentarios"> ver comentarios...</div>
+          <br>
+          <div class="tiempo_publicacion">hace 1 hora</div> 
+          <br>
+          <br>
+          <br>
+          
+        </div>  
+      </div>
+    </div>
+  </div>
+
   
 </ion-content>
+
