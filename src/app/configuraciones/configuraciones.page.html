@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/perfil"></ion-back-button>
+      <ion-back-button defaultHref="tabs/perfil"></ion-back-button>
     </ion-buttons>
     <ion-title>Configuraciones</ion-title>
   </ion-toolbar>
@@ -23,7 +23,7 @@
     </ion-item>
   </ion-list>
 
-  <ion-button  class="salirBoton">Salir de cuenta</ion-button>
+  <ion-button  class="salirBoton" fill="clear" (click)="presentAlert()">Salir de cuenta</ion-button>
   
 
 </ion-content>
