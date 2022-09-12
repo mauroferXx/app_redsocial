@@ -1,0 +1,41 @@
+.video_player{
+    object-fit: cover;
+    //height: 460px;
+    //width: 600px;
+    overflow: scroll;
+    border-radius: 20px;
+}
+
+
+#corazon{
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    margin: 5px;
+}
+
+#comentario{
+    position: fixed;
+    right: 25px;
+    bottom: 70px;
+    margin: 5px;
+}
+
+#compartir{
+    position: fixed;
+    right: 25px;
+    bottom: 40px;
+    margin: 5px;
+}
+
+
+#cuenta{
+    position: fixed;
+    left: 25px;
+    bottom: 20px;
+    margin: 5px;
+    color:white;
+
+}
+
+
