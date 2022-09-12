@@ -8,12 +8,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+ 
+
+  <ion-item class="app_videos">
+ 
+    <video src="assets/reels/1.mp4" class="video_player" width="640" height="480" autoplay="autoplay" ></video>
+
+    <div class="videoSidebar">
+
+      <div class="videosidebar_boton">
+        <ion-button fill="clear" color="dark" id="corazon">
+          <ion-icon slot="icon-only"  name="heart-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="videosidebar_boton">
+        <ion-button fill="clear" color="dark" id="comentario">
+          <ion-icon slot="icon-only"  name="chatbox-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="videosidebar_boton">
+        <ion-button fill="clear" color="dark" id="compartir">
+          <ion-icon slot="icon-only"  name="arrow-redo-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div>
+        <label id="cuenta">@ksjndaksjdn</label>
+      </div>
+    </div>
+  </ion-item>
+
   <ion-header collapse="condense">
     <ion-toolbar>
       
       
     </ion-toolbar>
   </ion-header>
+
 
 
 </ion-content>
