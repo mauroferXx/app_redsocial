@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
+import { LoginPage } from '../login/login.page';
 
 @Component({
   selector: 'app-configuraciones',
@@ -11,7 +13,7 @@ export class ConfiguracionesPage{
   handlerMessage = '';
   roleMessage = '';
 
-  constructor(private alertController: AlertController) {}
+  constructor(private alertController: AlertController, public navCtrl: NavController) {}
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -29,6 +31,7 @@ export class ConfiguracionesPage{
           role: 'confirm',
           handler: () => {
             this.handlerMessage = 'Alert confirmed';
+            this.navCtrl.navigateForward('login');
           },
         },
       ],

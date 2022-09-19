@@ -1,0 +1,60 @@
+ion-content{
+    --ion-background-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.logo{
+    max-width: 80%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.label{
+    --ion-background-color: white;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width:275px;
+}
+
+
+.botonInicioSesion{
+    text-transform: initial;
+    --ion-background-color: none;
+    display: block;
+    width:275px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+    
+}
+
+
+.botonInicioSesionFacebbok{
+    display: block;
+    text-transform: initial;
+    margin-left: 15px; 
+    width:275px;
+    margin-top: 15px;
+
+}
+
+
+
+.botonOlvidarContraseña{
+    font-size: 9px;
+    color: black;
+    display: block;
+    margin: 0px auto;
+    text-transform: initial;
+}
+
+
+.botonRegistrarse{
+    font-size: 9px;
+    color: black;
+    display: block;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-transform: initial;
+}
