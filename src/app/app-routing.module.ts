@@ -17,6 +17,22 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'editar-perfil',
+    loadChildren: () => import('./editar-perfil/editar-perfil.module').then( m => m.EditarPerfilPageModule)
+  },
+  {
+    path: 'tabs2',
+    loadChildren: () => import('./tabs2/tabs2.module').then( m => m.Tabs2PageModule)
+  },
+  {
+    path: 'tab-publicaciones',
+    loadChildren: () => import('./tab-publicaciones/tab-publicaciones.module').then( m => m.TabPublicacionesPageModule)
+  },
+  {
+    path: 'tab-etiquetas',
+    loadChildren: () => import('./tab-etiquetas/tab-etiquetas.module').then( m => m.TabEtiquetasPageModule)
+  },
 
   
 ];
